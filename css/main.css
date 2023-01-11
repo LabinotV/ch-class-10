@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
 
 * {
     box-sizing: border-box;
@@ -149,6 +149,36 @@ picture {
 .block_breadcrumb_item {
     font-family: 'Work Sans', sans serif;
     color: #373737;
+    text-decoration: none;
+}
+
+.block_pagination {
+    margin: 0;
+    margin-top: 102px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.block_pagination_item:not(:last-child) {
+    margin-right: 18px;
+}
+
+.block_pagination_link.active {
+    color: #fff;
+    background-color: #FF5300;
+}
+
+.block_pagination_link {
+    display: inline-block;
+    padding: 13px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: 'Work Sans', sans serif;
+    color: #FF5300;
+    border: 1px solid #FF5300;
     text-decoration: none;
 }
 
@@ -818,6 +848,7 @@ picture {
 
 .blog_posts {
     width: 70%;
+    padding-right: 30px;
 }
 .blog_aside {
     width: 30%;
@@ -946,6 +977,51 @@ picture {
 .tag_list {
     display: flex;
     flex-wrap: wrap;
+}
+
+.blog_post {
+    margin-bottom: 42px;
+}
+
+.blog_post_picture {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 22px;
+}
+.blog_post_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog_post_detail:not(:last-child) {
+    margin-right: 30px;
+}
+
+.blog_post_detail {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    font-family: 'Work Sans', sans serif;
+    color: #7B7B7B;
+}
+
+.blog_detail_icon {
+    margin-right: 18px;
+}
+
+.blog_post_title {
+    margin-top: 40px;
+    margin-bottom: 18px;
+    font-size: 31px;
+    line-height: 38px;
+    font-weight: 600;
+    font-family: 'Work Sans', sans serif;
+    color: #373737;
+}
+
+.blog_post_content {
+    padding: 18px;
 }
 
 /* 

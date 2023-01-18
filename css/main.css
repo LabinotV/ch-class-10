@@ -121,6 +121,7 @@ picture {
 
 .block_main_title {
     line-height: 60px;
+    text-align: center;
 }
 
 .block_breadcrumb {
@@ -159,10 +160,12 @@ picture {
     list-style: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .block_pagination_item:not(:last-child) {
     margin-right: 18px;
+    margin-bottom: 18px;
 }
 
 .block_pagination_link.active {
@@ -212,7 +215,7 @@ picture {
     text-decoration: none;
 }
 
-.header_nav_li:first-child .header_nav_link {
+.header_nav_link.active {
     color: #FF5300;
 }
 
@@ -844,6 +847,7 @@ picture {
 /* blog page */
 .blog_container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .blog_posts {
@@ -1024,6 +1028,17 @@ picture {
     padding: 18px;
 }
 
+/* blog details */
+.bd_picture {
+    width: 100%;
+    height: 400px;
+}
+.bd_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* 
     1400px //big
     1050px //small laptop
@@ -1065,13 +1080,39 @@ picture {
         line-height: 34px;
     }
 
+    .header_nav {
+        display: none;
+        padding-top: 30px;
+    }
+
+    .header_nav_link {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .header_nav_li {
+        margin: 15px 0;
+    }
+
+    .header_nav_li:last-child .header_nav_link {
+        display: inline-block;
+        margin-top: 20px;
+        margin: 0 15px;
+    }
+
+    .menu-open {
+        overflow: hidden;
+    }
+
     .menu-open .header_nav {
         position: absolute;
         top: 105px;
+        left: 15px;
         display: block;
         background-color: #fff;
-        width: 100%;
-        height: 100%;
+        width: calc(100% - 30px);
+        height: calc(100% - 120px);
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, .1);
     }
 
     .wwd_box:before {
@@ -1105,6 +1146,19 @@ picture {
     }
     .footer_copyright_text {
         margin-right: 50px;
+    }
+
+    .blog_posts, .blog_aside {
+        width: 100%;
+    }
+
+    .blog_posts {
+        order: 2;
+        padding-right: 0;
+    }
+
+    .blog_aside {
+        order: 1;
     }
 }
 
@@ -1207,6 +1261,18 @@ picture {
     .footer_copyright_link {
         margin-bottom: 10px;
     }
+
+    .blog_post_detail {
+        font-size: 18px;
+    } 
+
+    .blog_post_title {
+        margin-top: 20px;
+    }
+
+    .blog_post_picture {
+        margin-bottom: 0;
+    }
 }
 @media (max-width: 576px) { /* -10% */
     .title_primary {
@@ -1230,7 +1296,10 @@ picture {
     }
     .block_note::after {
         right: -35px;
-    }    
+    }
+    .block_pagination {
+        margin-top: 50px;
+    }
 
     .wwd_item, .cs_box {
         width: 100%;
@@ -1275,5 +1344,9 @@ picture {
 
     .footer_item {
         width: 100%;
+    }
+    
+    .blog_post_content {
+        padding: 6px;
     }
 }

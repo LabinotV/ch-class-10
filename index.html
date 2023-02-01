@@ -13,7 +13,7 @@
 <body>
     <header class="header block_bg">
         <div class="container header_content">
-            <picture>
+            <picture id="logo">
                 <img src="./img/logo.svg" alt="logo" />
             </picture>
             <ul class="header_nav">
@@ -25,7 +25,7 @@
                 <li class="header_nav_li"><a class="header_nav_link" href="">Contact Us</a></li>
                 <li class="header_nav_li"><a class="header_nav_link" href="">Let's Talk</a></li>
             </ul>
-            <svg class="header_burger" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="header_burger" class="header_burger" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="#373737"/>
             </svg>
         </div>
@@ -40,7 +40,7 @@
                     in digni ssim euismod purus donec mus vulputate habitant iaculis. Com
                     odo enim ornare turpis tempus enim, nibh nulla. Rhoncus sed.
                 </p>
-                <a class="block_btn" href="">Get Start Now</a>
+                <a class="block_btn" id="main_btn">Get Start Now</a>
             </div>
             <picture class="main_picture">
                 <img class="main_img" src="./img/main.png" alt="working" />
@@ -968,8 +968,8 @@
                 <h2 class="title_secondary newsletter_title">Lets Stay In Touch</h2>
             </div>
             <form class="newsletter_form">
-                <input class="newsletter_inp" type="text" placeholder="Enter your email" />
-                <input class="block_btn newsletter_btn" type="submit" value="Subscribe Now" />
+                <input id="newsletter_inp" class="newsletter_inp" type="text" placeholder="Enter your email" />
+                <input id="newsletter_btn" class="block_btn newsletter_btn" type="submit" value="Subscribe Now" />
             </form>
         </div>
     </section>
@@ -1043,30 +1043,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".testimonial_swiper", {
-          slidesPerView: 1,
-          spaceBetween: 30,
-          slidesPerGroup: 1,
-          loop: false,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          breakpoints: {
-            // when window width is >= 992px
-            992: {
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-            },
-            // when window width is >= 576px
-            576: {
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-            }
-        }
-        });
-    </script>
+    <script type="text/javascript" src="./js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

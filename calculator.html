@@ -12,12 +12,12 @@
         <input id="first_num" type="number" placeholder="Type first number" />
         <input id="second_num" type="number" placeholder="Type second number" />
 
-        <button>+</button>
-        <button>-</button>
-        <button>*</button>
-        <button>/</button>
+        <button onclick="calculate(this)" value="+" id="plus">+</button>
+        <button onclick="calculate(this)" value="-" id="minus">-</button>
+        <button onclick="calculate(this)" value="*" id="multi">*</button>
+        <button onclick="calculate(this)" value="/" id="divide">/</button>
 
-        <p>Result is: </p>
+        <p id="result">Result is: </p>
     </div>
 
     <script type="text/javascript" src="./js/calculator.js"></script>

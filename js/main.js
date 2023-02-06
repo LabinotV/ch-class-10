@@ -165,4 +165,60 @@ let stringExample = "test ABCD EFGHIJKLM NOPQRSTUVWXYZ ABCD";
 // console.log(stringExample.indexOf("ABCD"))
 // console.log(stringExample.lastIndexOf("ABCD"))
 
+let x = 10;
+let y = 20;
+// console.log(x + y);
+// console.log("Result is " + x + y);
 
+let a = "10";
+let b = "20";
+// console.log(a + b);
+
+let c = 10;
+let d = "20";
+// console.log(c + d);
+
+let e = "10";
+let f = 20;
+// console.log(e + f);
+let g = 12.523454234
+// console.log(f)
+// console.log(f.toString())
+// console.log(g.toExponential())
+// console.log(g.toFixed())
+// console.log(g.toPrecision())
+// console.log(g.valueOf())
+// console.log(parseFloat(g))
+// console.log(parseInt(g))
+
+const myArray = ["Item 1", "Item 2", "Item 3", "a", {key: 1}];
+const arrayOfNumbers = [1,3,5,7];
+
+// console.log(myArray);
+
+// console.log(training);
+
+// console.log(myArray.filter(item => item === "a"))
+// console.log(arrayOfNumbers.map(item => item + 2))
+// console.log(myArray.map(item => item + 2))
+
+
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const array = [5, 12, 8, 130, 44];
+
+// console.log(words.filter(word => word.length < 6));
+
+// console.log(array.find(num => num < 9));
+
+// console.log(array.findIndex(num => num === 8));
+
+// words.forEach(word => console.log(word))
+// array.forEach(word => console.log(word))
+
+// console.log(array.includes(130));
+
+console.log(array)
+console.log(array.map(num => num * 2));
+
+console.log(words.sort())
+console.log(array.sort((a,b) => a - b))

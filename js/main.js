@@ -8,7 +8,6 @@ var swiper = new Swiper(".testimonial_swiper", {
         prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-<<<<<<< HEAD
         // when window width is >= 992px
         992: {
             slidesPerView: 3,
@@ -44,7 +43,6 @@ console.log (myVariable + myVariable2)  //6
 console.log (myVariable + myVariableStr) // 22
 
 
-=======
     // when window width is >= 992px
     992: {
         slidesPerView: 3,
@@ -259,4 +257,3 @@ console.log(array.map(num => num * 2));
 
 console.log(words.sort())
 console.log(array.sort((a,b) => a - b))
->>>>>>> bf0a7c8227e57c6badad02fc69aeacb4b2f0336d
